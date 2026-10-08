@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yubo Gao 的个人主页：个人介绍、最新动态、论文与项目、经历。">
+  <meta name="color-scheme" content="light">
+  <title>Yubo Gao · Personal Homepage</title>
+  <style>
+    :root {
+      --ink: #203440; --secondary: #425865; --muted: #647680;
+      --accent: #2b6270; --line: #e2e9eb; --paper: #fff; --canvas: #f3f5f5;
+      --serif: Georgia, "Times New Roman", "Songti SC", SimSun, serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 78px; }
+    body { margin: 0; background: var(--canvas); color: var(--ink); font: 14px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; }
+    h1, h2, h3, h4, p, ul { margin: 0; }
+    ul { padding: 0; list-style: none; }
+    a { color: var(--accent); text-decoration: none; text-underline-offset: 3px; }
+    a:hover { text-decoration: underline; }
+    button { font: inherit; cursor: pointer; }
+    a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    ::selection { background: #deecee; }
+    .skip { position: fixed; left: 16px; top: -80px; padding: 8px 16px; z-index: 30; background: white; border: 1px solid var(--line); }
+    .skip:focus { top: 8px; }
+    .topbar { position: sticky; top: 0; z-index: 10; background: rgba(250,252,252,.96); border-bottom: 1px solid var(--line); }
+    .nav { max-width: 1120px; margin: auto; padding: 0 28px; display: flex; align-items: center; min-height: 55px; gap: 26px; }
+    .brand { margin-right: auto; white-space: nowrap; font-size: 15px; font-weight: 650; color: var(--ink); }
+    .brand::after { content: ""; display: inline-block; margin: 0 0 2px 5px; width: 4px; height: 4px; background: #739899; border-radius: 50%; }
+    .nav-links { display: flex; gap: 4px; white-space: nowrap; overflow-x: auto; scrollbar-width: none; }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a { display: block; padding: 15px 10px 13px; border-bottom: 2px solid transparent; font-size: 12px; color: var(--muted); }
+    .nav-links a:hover, .nav-links a[aria-current="location"] { text-decoration: none; border-color: var(--accent); color: var(--accent); }
+    main { max-width: 1120px; padding: 0 28px; margin: 22px auto 36px; }
+    .sheet { position: relative; padding: 30px 32px 22px; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 12px 40px -28px #334a5966; }
+    .sheet::before { content: ""; position: absolute; height: 2px; top: -1px; left: 32px; right: 32px; background: linear-gradient(90deg,#3b626c,#acbfc2 45%,transparent); }
+    .introduction { display: grid; grid-template-columns: 210px minmax(0,1fr); gap: 34px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+    .portrait { width: 100px; height: 116px; border-radius: 10px; object-fit: cover; display: block; background: #e8eff0; margin-bottom: 14px; border: 1px solid var(--line); }
+    .name { font-family: var(--serif); font-size: 28px; font-weight: 500; letter-spacing: -.8px; line-height: 1.25; overflow-wrap: anywhere; }
+    .role { margin-top: 7px; color: var(--secondary); font-size: 13px; }
+    .affiliation { color: var(--muted); font-size: 12px; margin-top: 3px; }
+    .contacts { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 13px; }
+    .contact { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line); border-radius: 6px; padding: 3px 9px; color: var(--secondary); background: #fafcfc; font-size: 11px; font-weight: 600; }
+    .contact:hover { text-decoration: none; background: #edf4f4; border-color: #b7cccf; }
+    .contact svg { width: 13px; height: 13px; }
+    .eyebrow { color: var(--muted); font-size: 10px; font-weight: 650; text-transform: uppercase; letter-spacing: .16em; display: flex; align-items: center; gap: 9px; margin-bottom: 13px; }
+    .eyebrow::before { content: ""; width: 18px; height: 1px; background: #88a9ad; }
+    .bio { color: var(--secondary); font-size: 13px; line-height: 1.85; }
+    .bio p + p { margin-top: 11px; }
+    .bio strong { color: var(--ink); font-weight: 650; }
+    .interests { margin-top: 18px; }
+    .interests h3 { font-size: 12px; font-weight: 650; margin-bottom: 8px; }
+    .interest-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 18px; }
+    .interest { border-left: 2px solid #d4e3e5; padding-left: 10px; }
+    .interest strong { display: block; font-size: 12px; color: var(--secondary); font-weight: 600; }
+    .interest span { font-size: 11px; color: var(--muted); }
+    .content-section { margin-top: 25px; }
+    .section-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+    .section-title { font: 500 22px/1.25 var(--serif); letter-spacing: -.5px; }
+    .section-caption { color: var(--muted); font-size: 10px; }
+    .news-item { display: grid; grid-template-columns: 70px minmax(0,1fr); gap: 12px; padding: 5px 0; font-size: 12.5px; color: var(--secondary); }
+    .date { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; padding-top: 2px; }
+    .news-item:first-child .date { color: var(--accent); font-weight: 650; }
+    .news-item strong { color: var(--ink); }
+    .older-news { margin-top: 7px; }
+    .older-news summary { width: fit-content; color: var(--accent); font-size: 11px; cursor: pointer; }
+    .older-news[open] summary { margin-bottom: 4px; }
+    .placeholder-text { color: var(--muted); }
+    .publication-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 11px; }
+    .publication-note { font-size: 10px; color: var(--muted); }
+    .filters { display: flex; border: 1px solid var(--line); padding: 2px; background: #f3f6f6; border-radius: 7px; }
+    .filter { border: 0; padding: 3px 10px; background: transparent; color: var(--muted); border-radius: 4px; font-size: 11px; }
+    .filter[aria-pressed="true"] { color: var(--accent); background: white; box-shadow: 0 1px 4px #24445518; font-weight: 600; }
+    .pub-group + .pub-group { margin-top: 13px; }
+    .group-heading { display: flex; align-items: center; gap: 8px; color: var(--group-color,#345d78); font-size: 10px; font-weight: 700; letter-spacing: .055em; text-transform: uppercase; margin-bottom: 2px; }
+    .group-heading::before { content: ""; width: 3px; height: 11px; border-radius: 2px; background: currentColor; }
+    .group-heading::after { content: ""; height: 1px; flex: 1; background: linear-gradient(90deg,#d7e2e8,#f4f6f7); }
+    .paper { padding: 11px 0; }
+    .paper + .paper { border-top: 1px solid #edf1f2; }
+    .paper-title { font-size: 14px; font-weight: 650; line-height: 1.6; }
+    .tag { display: inline-block; vertical-align: 1px; color: white; background: var(--group-color,#345d78); border-radius: 4px; padding: 0 6px; margin-right: 8px; font-size: 9px; line-height: 17px; font-weight: 600; letter-spacing: .02em; }
+    .authors { color: var(--secondary); font-size: 12px; margin-top: 3px; }
+    .authors u { text-underline-offset: 3px; text-decoration-color: #b0c5ca; }
+    .paper-details { display: flex; flex-wrap: wrap; gap: 4px 11px; align-items: baseline; color: var(--muted); font-size: 11px; margin-top: 3px; }
+    .pending-links { display: inline-flex; gap: 8px; font-size: 10px; color: #71838a; }
+    [hidden] { display: none !important; }
+    .experience { display: grid; grid-template-columns: 195px minmax(0,1fr); gap: 20px; padding: 13px 0; }
+    .experience + .experience { border-top: 1px solid #edf1f2; }
+    .experience-time { color: var(--muted); font-size: 11px; padding-top: 2px; }
+    .experience-title { display: flex; align-items: baseline; flex-wrap: wrap; gap: 3px 12px; font-size: 13px; font-weight: 650; }
+    .experience-title span { color: var(--muted); font-size: 11px; font-weight: 400; }
+    .experience p { color: var(--secondary); font-size: 12px; margin-top: 5px; }
+    .bottom-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 22px; padding-top: 21px; border-top: 1px solid var(--line); }
+    .bottom-columns .section-title { font-size: 19px; margin-bottom: 9px; }
+    .bottom-columns p { font-size: 12px; color: var(--muted); line-height: 1.8; }
+    .footer { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-top: 23px; margin-top: 20px; color: var(--muted); border-top: 1px solid #edf1f2; font-size: 10px; }
+    @media (min-width:1440px) { main, .nav { max-width: 1200px; } }
+    @media (max-width:850px) {
+      .nav { gap: 12px; padding: 0 20px; } .nav-links a { padding-left: 7px; padding-right: 7px; }
+      main { padding: 0 18px; } .sheet { padding: 24px; }
+      .introduction { grid-template-columns: 180px minmax(0,1fr); gap: 25px; }
+      .experience { grid-template-columns: 165px minmax(0,1fr); }
+    }
+    @media (max-width:640px) {
+      body { background: white; }
+      .nav { padding: 0 14px; min-height: 48px; } .brand { display: none; }
+      .nav-links { width: 100%; } .nav-links a { padding: 12px 8px 10px; font-size: 11px; }
+      main { padding: 0; margin: 0; } .sheet { padding: 23px 20px; border: 0; border-radius: 0; box-shadow: none; }
+      .sheet::before { left: 20px; right: 20px; height: 1px; top: 0; }
+      .introduction { grid-template-columns: 1fr; gap: 22px; padding-bottom: 19px; }
+      .profile { display: grid; grid-template-columns: 80px minmax(0,1fr); column-gap: 17px; align-items: center; }
+      .portrait { grid-row: 1/3; width: 80px; height: 93px; margin: 0; align-self: start; }
+      .name { font-size: 25px; } .role { margin-top: 3px; font-size: 12px; }
+      .affiliation { font-size: 11px; } .contacts { grid-column: 2; margin-top: 8px; }
+      .bio { font-size: 12px; } .interest-grid { gap: 9px 12px; }
+      .section-title { font-size: 21px; } .section-caption { font-size: 9px; }
+      .news-item { grid-template-columns: 55px minmax(0,1fr); font-size: 12px; gap: 9px; } .date { font-size: 10px; }
+      .paper-title { font-size: 13px; } .authors { font-size: 11px; }
+      .experience { grid-template-columns: 1fr; gap: 3px; }
+      .bottom-columns { grid-template-columns: 1fr; gap: 18px; }
+    }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <!-- 修改姓名、头像和下方的待填写文字即可完善主页；本文件可直接用于 GitHub Pages。 -->
+  <a class="skip" href="#about-me">跳到正文</a>
+  <header class="topbar">
+    <nav class="nav" aria-label="页面导航">
+      <a class="brand" href="#about-me">Yubo Gao</a>
+      <ul class="nav-links">
+        <li><a href="#about-me" aria-current="location">About Me</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#misc">Misc</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <div class="sheet">
+      <section id="about-me" class="introduction" aria-labelledby="about-heading">
+        <aside class="profile" aria-label="个人资料">
+          <img class="portrait" src="https://avatars.githubusercontent.com/u/57480742?v=4" width="100" height="116" alt="Descartes-Stan 的 GitHub 头像" decoding="async">
+          <div>
+            <h1 class="name">Yubo Gao</h1>
+            <p class="role">Personal Homepage</p>
+            <p class="affiliation">学校 / 单位 · 待填写</p>
+          </div>
+          <div class="contacts">
+            <a class="contact" href="https://github.com/Descartes-Stan" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M6 5 1 10l5 5m8-10 5 5-5 5M12 3 8 17"/></svg>GitHub
+            </a>
+            <a class="contact" href="#publications">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 2h7l4 4v12H5zM12 2v5h4M8 10h5M8 13h5"/></svg>Works
+            </a>
+          </div>
+        </aside>
+        <div>
+          <h2 class="eyebrow" id="about-heading">About Me</h2>
+          <div class="bio">
+            <p>你好，我是 <strong>Yubo Gao</strong>，欢迎来到我的个人主页。</p>
+            <p class="placeholder-text">个人介绍（待填写）：在这里介绍你的学校或单位、专业背景、研究方向，以及目前正在做的事情。</p>
+            <p>这个页面将记录我的<strong>学习、研究和项目经历</strong>。你可以通过 <a href="https://github.com/Descartes-Stan" target="_blank" rel="noopener noreferrer">GitHub</a> 了解我的公开项目。</p>
+          </div>
+          <div class="interests">
+            <h3>Research Interests</h3>
+            <ul class="interest-grid">
+              <li class="interest"><strong>研究方向一 · 待填写</strong><span>相关问题与代表项目</span></li>
+              <li class="interest"><strong>研究方向二 · 待填写</strong><span>相关方法与应用场景</span></li>
+              <li class="interest"><strong>研究方向三 · 待填写</strong><span>正在探索的主题</span></li>
+              <li class="interest"><strong>项目与开源</strong><span><a href="https://github.com/Descartes-Stan?tab=repositories" target="_blank" rel="noopener noreferrer">查看我的 GitHub 仓库 ↗</a></span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="news" class="content-section" aria-labelledby="news-heading">
+        <div class="section-head"><h2 class="section-title" id="news-heading">News</h2><span class="section-caption">最新动态</span></div>
+        <ul>
+          <li class="news-item"><time class="date" datetime="2026-10">2026/10</time><span>建立我的<strong>个人主页</strong>，在这里分享学习与项目进展。</span></li>
+          <li class="news-item"><span class="date">待填写</span><span class="placeholder-text">在这里记录论文发表、项目上线、入学或其他值得分享的消息。</span></li>
+        </ul>
+        <details class="older-news"><summary>Earlier news · 更多动态</summary><p class="placeholder-text" style="font-size:12px;padding-top:5px">暂无更早的动态，后续可在这里添加。</p></details>
+      </section>
+      <section id="publications" class="content-section" aria-labelledby="publications-heading">
+        <div class="section-head"><h2 class="section-title" id="publications-heading">Publications</h2><span class="section-caption">论文与项目</span></div>
+        <div class="publication-bar">
+          <p class="publication-note">以下为待填写条目，后续替换为自己的论文或项目。</p>
+          <div class="filters" role="group" aria-label="筛选作品">
+            <button class="filter" type="button" data-filter="all" aria-pressed="true" aria-controls="works">All works</button>
+            <button class="filter" type="button" data-filter="papers" aria-pressed="false" aria-controls="works">Papers</button>
+            <button class="filter" type="button" data-filter="projects" aria-pressed="false" aria-controls="works">Projects</button>
+          </div>
+        </div>
+        <div id="works">
+          <div class="pub-group" data-kind="papers" style="--group-color:#345d78">
+            <h3 class="group-heading">Peer-reviewed Papers · 论文</h3>
+            <article class="paper">
+              <h4 class="paper-title"><span class="tag">PAPER</span>论文标题（待填写）</h4>
+              <p class="authors"><u>Yubo Gao</u>，其他作者（待填写）</p>
+              <div class="paper-details"><em>会议 / 期刊名称（待填写）</em><span>年份待填写</span><span class="pending-links">论文链接待添加 · 代码链接待添加</span></div>
+            </article>
+          </div>
+          <div class="pub-group" data-kind="projects" style="--group-color:#54734e">
+            <h3 class="group-heading">Selected Projects · 项目</h3>
+            <article class="paper">
+              <h4 class="paper-title"><span class="tag">PROJECT</span>项目名称（待填写）</h4>
+              <p class="authors">在这里描述项目解决的问题、使用的方法，以及你的贡献。</p>
+              <div class="paper-details"><span>项目时间待填写</span><span class="pending-links">项目地址待添加 · 演示链接待添加</span></div>
+            </article>
+          </div>
+          <div class="pub-group" data-kind="papers" style="--group-color:#976340">
+            <h3 class="group-heading">Preprints &amp; Ongoing Work · 在研工作</h3>
+            <article class="paper">
+              <h4 class="paper-title"><span class="tag">ONGOING</span>正在进行的工作（待填写）</h4>
+              <p class="authors">在这里介绍尚在进行的研究或学习项目。</p>
+              <div class="paper-details"><span>简要进展待填写</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="content-section" aria-labelledby="experience-heading">
+        <div class="section-head"><h2 class="section-title" id="experience-heading">Experience</h2><span class="section-caption">教育与实践经历</span></div>
+        <article class="experience">
+          <div class="experience-time">起止时间 · 待填写</div>
+          <div><h3 class="experience-title">学校 / 研究机构（待填写）<span>学位 / 专业</span></h3><p class="placeholder-text">在这里填写教育背景、研究课题或导师信息。</p></div>
+        </article>
+        <article class="experience">
+          <div class="experience-time">起止时间 · 待填写</div>
+          <div><h3 class="experience-title">公司 / 团队（待填写）<span>实习 / 工作岗位</span></h3><p class="placeholder-text">在这里填写实习、工作或项目经历，以及主要负责的内容。</p></div>
+        </article>
+      </section>
+      <div class="bottom-columns">
+        <section id="services" aria-labelledby="services-heading"><h2 class="section-title" id="services-heading">Services</h2><p>学术服务、志愿活动或社区贡献（待填写）。</p></section>
+        <section id="misc" aria-labelledby="misc-heading"><h2 class="section-title" id="misc-heading">Misc</h2><p>除了学习和工作之外，也可以在这里分享你的兴趣、运动、摄影或生活片段（待填写）。</p></section>
+      </div>
+      <footer class="footer"><span>© <span id="year">2026</span> Yubo Gao</span><span><a href="https://github.com/Descartes-Stan" target="_blank" rel="noopener noreferrer">GitHub</a> · Personal Homepage</span></footer>
+    </div>
+  </main>
+  <script>
+    // 作品筛选：纯浏览器代码，无需额外依赖或构建工具。
+    document.querySelectorAll('.filter').forEach(function (button) {
+      button.addEventListener('click', function () {
+        document.querySelectorAll('.filter').forEach(function (other) { other.setAttribute('aria-pressed', String(other === button)); });
+        document.querySelectorAll('.pub-group').forEach(function (group) { group.hidden = button.dataset.filter !== 'all' && group.dataset.kind !== button.dataset.filter; });
+      });
+    });
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+    var links = Array.from(document.querySelectorAll('.nav-links a'));
+    var sections = links.map(function (link) { return document.querySelector(link.getAttribute('href')); });
+    function updateNavigation() {
+      var current = sections[0];
+      sections.forEach(function (section) { if (section.getBoundingClientRect().top <= 110) current = section; });
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 3) current = sections[sections.length - 1];
+      links.forEach(function (link) {
+        if (link.getAttribute('href') === '#' + current.id) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    }
+    var queued = false;
+    window.addEventListener('scroll', function () {
+      if (!queued) { queued = true; requestAnimationFrame(function () { updateNavigation(); queued = false; }); }
+    }, { passive: true });
+    window.addEventListener('resize', updateNavigation);
+    window.addEventListener('load', updateNavigation);
+  </script>
+</body>
+</html>

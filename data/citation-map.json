@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "scholar_user": "9w5nDxUAAAAJ",
+  "expected_name": "Yubo Gao",
+  "papers": [
+    {
+      "key": "nestedkv",
+      "title": "NestedKV: Nested Memory Routing for Long-Context KV Cache Compression",
+      "url": "https://arxiv.org/abs/2605.26678",
+      "scholar_id": "9w5nDxUAAAAJ:W7OEmFMy1HYC"
+    },
+    {
+      "key": "thinking-economically",
+      "title": "Thinking Economically: A Hierarchical Framework for Adaptive-Complexity Reasoning in LLMs",
+      "url": "https://aclanthology.org/2026.findings-acl.1965/",
+      "scholar_id": "9w5nDxUAAAAJ:YsMSGLbcyi4C"
+    },
+    {
+      "key": "physicsarena",
+      "title": "PhysicsArena: The First Multimodal Physics Reasoning Benchmark Exploring Variable, Process, and Solution Dimensions",
+      "url": "https://aclanthology.org/2025.findings-emnlp.937/",
+      "scholar_id": "9w5nDxUAAAAJ:2osOgNQ5qMEC"
+    },
+    {
+      "key": "bert-text-classification",
+      "title": "Do BERT-Like Bidirectional Models Still Perform Better on Text Classification in the Era of LLMs?",
+      "url": "https://aclanthology.org/2025.findings-emnlp.1033/",
+      "scholar_id": "9w5nDxUAAAAJ:UeHWp8X0CEIC"
+    },
+    {
+      "key": "mcan",
+      "title": "Multi-level Conflict-Aware Network for Multi-modal Sentiment Analysis",
+      "url": "https://doi.org/10.1109/ICASSP49660.2025.10888597",
+      "scholar_id": "9w5nDxUAAAAJ:d1gkVwhDpl0C"
+    },
+    {
+      "key": "mt-bicn",
+      "title": "MT-BICN: Multi-task Balanced Information Cascade Network for Recommendation",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-40289-0_34",
+      "scholar_id": "9w5nDxUAAAAJ:u5HHmVD_uO8C"
+    },
+    {
+      "key": "tdcgl",
+      "title": "TDCGL: Two-Level Debiased Contrastive Graph Learning for Recommendation",
+      "url": "https://doi.org/10.1109/ICTAI59109.2023.00030",
+      "scholar_id": "9w5nDxUAAAAJ:u-x6o8ySG0sC"
+    },
+    {
+      "key": "cohemark",
+      "title": "CoheMark: A Novel Sentence-Level Watermark for Enhanced Text Quality",
+      "url": "https://arxiv.org/abs/2504.17309",
+      "scholar_id": "9w5nDxUAAAAJ:9yKSN-GCB0IC"
+    },
+    {
+      "key": "visual-kv-memory",
+      "title": "Seen, Said, or Forgotten? A Causal Audit of Visual KV Memory Across Dialog Turns",
+      "url": "https://arxiv.org/abs/2607.25467",
+      "scholar_id": "9w5nDxUAAAAJ:WF5omc3nYNoC"
+    },
+    {
+      "key": "missing-modalities",
+      "title": "Should Missing Modalities Always Be Necessary to Repair for Multi-modal Sentiment Analysis?",
+      "url": "https://arxiv.org/abs/2607.17262",
+      "scholar_id": "9w5nDxUAAAAJ:eQOLeE2rZwMC"
+    },
+    {
+      "key": "effireason-bench",
+      "title": "EffiReason-Bench: A Unified Benchmark for Evaluating and Advancing Efficient Reasoning in Large Language Models",
+      "url": "https://arxiv.org/abs/2511.10201",
+      "scholar_id": "9w5nDxUAAAAJ:Tyk-4Ss8FVUC"
+    },
+    {
+      "key": "moss-chatv",
+      "title": "MOSS-ChatV: Reinforcement Learning with Process Reasoning Reward for Video Temporal Reasoning",
+      "url": "https://arxiv.org/abs/2509.21113",
+      "scholar_id": "9w5nDxUAAAAJ:IjCSPb-OGe4C"
+    },
+    {
+      "key": "instruction-neurons",
+      "title": "Unveiling Instruction-Specific Neurons & Experts: An Analytical Framework for LLM's Instruction-Following Capabilities",
+      "url": "https://arxiv.org/abs/2505.21191",
+      "scholar_id": "9w5nDxUAAAAJ:zYLM7Y9cAGgC"
+    }
+  ]
+}

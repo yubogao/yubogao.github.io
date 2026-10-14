@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "scholar_user": "9w5nDxUAAAAJ",
+  "source_url": "https://scholar.google.com/citations?user=9w5nDxUAAAAJ&hl=en&pagesize=100",
+  "updated_at": "2026-10-14T01:51:48Z",
+  "total_citations": 85,
+  "papers": {
+    "nestedkv": {
+      "scholar_id": "9w5nDxUAAAAJ:W7OEmFMy1HYC",
+      "citations": 1
+    },
+    "thinking-economically": {
+      "scholar_id": "9w5nDxUAAAAJ:YsMSGLbcyi4C",
+      "citations": 0
+    },
+    "physicsarena": {
+      "scholar_id": "9w5nDxUAAAAJ:2osOgNQ5qMEC",
+      "citations": 9
+    },
+    "bert-text-classification": {
+      "scholar_id": "9w5nDxUAAAAJ:UeHWp8X0CEIC",
+      "citations": 21
+    },
+    "mcan": {
+      "scholar_id": "9w5nDxUAAAAJ:d1gkVwhDpl0C",
+      "citations": 12
+    },
+    "mt-bicn": {
+      "scholar_id": "9w5nDxUAAAAJ:u5HHmVD_uO8C",
+      "citations": 5
+    },
+    "tdcgl": {
+      "scholar_id": "9w5nDxUAAAAJ:u-x6o8ySG0sC",
+      "citations": 1
+    },
+    "cohemark": {
+      "scholar_id": "9w5nDxUAAAAJ:9yKSN-GCB0IC",
+      "citations": 21
+    },
+    "visual-kv-memory": {
+      "scholar_id": "9w5nDxUAAAAJ:WF5omc3nYNoC",
+      "citations": 1
+    },
+    "missing-modalities": {
+      "scholar_id": "9w5nDxUAAAAJ:eQOLeE2rZwMC",
+      "citations": 0
+    },
+    "effireason-bench": {
+      "scholar_id": "9w5nDxUAAAAJ:Tyk-4Ss8FVUC",
+      "citations": 2
+    },
+    "moss-chatv": {
+      "scholar_id": "9w5nDxUAAAAJ:IjCSPb-OGe4C",
+      "citations": 10
+    },
+    "instruction-neurons": {
+      "scholar_id": "9w5nDxUAAAAJ:zYLM7Y9cAGgC",
+      "citations": 2
+    }
+  }
+}

@@ -2,8 +2,8 @@
   "schema_version": 1,
   "scholar_user": "9w5nDxUAAAAJ",
   "source_url": "https://scholar.google.com/citations?user=9w5nDxUAAAAJ&hl=en&pagesize=100",
-  "updated_at": "2026-10-16T22:18:34Z",
-  "total_citations": 87,
+  "updated_at": "2026-10-17T22:21:20Z",
+  "total_citations": 90,
   "papers": {
     "nestedkv": {
       "scholar_id": "9w5nDxUAAAAJ:W7OEmFMy1HYC",
@@ -19,7 +19,7 @@
     },
     "bert-text-classification": {
       "scholar_id": "9w5nDxUAAAAJ:UeHWp8X0CEIC",
-      "citations": 22
+      "citations": 23
     },
     "mcan": {
       "scholar_id": "9w5nDxUAAAAJ:d1gkVwhDpl0C",
@@ -47,11 +47,11 @@
     },
     "effireason-bench": {
       "scholar_id": "9w5nDxUAAAAJ:Tyk-4Ss8FVUC",
-      "citations": 2
+      "citations": 3
     },
     "moss-chatv": {
       "scholar_id": "9w5nDxUAAAAJ:IjCSPb-OGe4C",
-      "citations": 10
+      "citations": 11
     },
     "instruction-neurons": {
       "scholar_id": "9w5nDxUAAAAJ:zYLM7Y9cAGgC",

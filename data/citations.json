@@ -2,8 +2,8 @@
   "schema_version": 1,
   "scholar_user": "9w5nDxUAAAAJ",
   "source_url": "https://scholar.google.com/citations?user=9w5nDxUAAAAJ&hl=en&pagesize=100",
-  "updated_at": "2026-10-17T22:21:20Z",
-  "total_citations": 90,
+  "updated_at": "2026-10-23T22:12:58Z",
+  "total_citations": 91,
   "papers": {
     "nestedkv": {
       "scholar_id": "9w5nDxUAAAAJ:W7OEmFMy1HYC",
@@ -19,7 +19,7 @@
     },
     "bert-text-classification": {
       "scholar_id": "9w5nDxUAAAAJ:UeHWp8X0CEIC",
-      "citations": 23
+      "citations": 24
     },
     "mcan": {
       "scholar_id": "9w5nDxUAAAAJ:d1gkVwhDpl0C",

@@ -2,8 +2,8 @@
   "schema_version": 1,
   "scholar_user": "9w5nDxUAAAAJ",
   "source_url": "https://scholar.google.com/citations?user=9w5nDxUAAAAJ&hl=en&pagesize=100",
-  "updated_at": "2026-11-16T02:42:22Z",
-  "total_citations": 97,
+  "updated_at": "2026-11-21T22:13:06Z",
+  "total_citations": 98,
   "papers": {
     "nestedkv": {
       "scholar_id": "9w5nDxUAAAAJ:W7OEmFMy1HYC",
@@ -23,7 +23,7 @@
     },
     "mcan": {
       "scholar_id": "9w5nDxUAAAAJ:d1gkVwhDpl0C",
-      "citations": 12
+      "citations": 13
     },
     "mt-bicn": {
       "scholar_id": "9w5nDxUAAAAJ:u5HHmVD_uO8C",

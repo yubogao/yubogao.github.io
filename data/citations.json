@@ -2,8 +2,8 @@
   "schema_version": 1,
   "scholar_user": "9w5nDxUAAAAJ",
   "source_url": "https://scholar.google.com/citations?user=9w5nDxUAAAAJ&hl=en&pagesize=100",
-  "updated_at": "2026-11-21T22:13:06Z",
-  "total_citations": 98,
+  "updated_at": "2026-11-23T22:13:14Z",
+  "total_citations": 101,
   "papers": {
     "nestedkv": {
       "scholar_id": "9w5nDxUAAAAJ:W7OEmFMy1HYC",
@@ -39,11 +39,11 @@
     },
     "visual-kv-memory": {
       "scholar_id": "9w5nDxUAAAAJ:WF5omc3nYNoC",
-      "citations": 1
+      "citations": 3
     },
     "missing-modalities": {
       "scholar_id": "9w5nDxUAAAAJ:eQOLeE2rZwMC",
-      "citations": 1
+      "citations": 2
     },
     "effireason-bench": {
       "scholar_id": "9w5nDxUAAAAJ:Tyk-4Ss8FVUC",
